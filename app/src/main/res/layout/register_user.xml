@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--I will also guide you how to control softkey board buttons-->
+      <EditText
+          android:id="@+id/et_name"
+          android:hint="Name"
+          android:inputType="text"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_email"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+       <!--make password hidden-->
+        <!--show done button-->
+        <EditText
+            android:id="@+id/et_password"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_alignParentBottom="true"
+        android:text="Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
